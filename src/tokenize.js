@@ -29,10 +29,11 @@ export const keywords = {
     OPEN_SQUARE_BRACKET,
     CLOSE_SQUARE_BRACKET,
     COMMA, UNDEFINED, NULL, SEMICOLON,
-    PLUS, MINUS, PRODUCT, DIVIDE, OPERATOR, EQUAL_SIGN
+    PLUS, MINUS, PRODUCT, DIVIDE, OPERATOR, EQUAL_SIGN,
+    OPEN_CURVE, CLOSE_CURVE
 };
 
-class Token {
+export class Token {
     constructor({literal, start, end, line, type = LITERAL}) {
         Object.assign(this, {literal, start, end, line, type});
     }

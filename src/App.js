@@ -22,9 +22,11 @@ class App extends React.Component {
         console.log(tokens);
         this.setState({tokens})
     }
-   handleParser=()=>{
-       console.log(new Parser().travel(this.state.tokens));
-   }
+    handleParser = () => {
+        let p = new Parser()
+        console.log(p.parser(this.state.tokens));
+    }
+
     render() {
         return (
             <div>
