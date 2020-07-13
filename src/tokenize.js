@@ -181,7 +181,6 @@ export class Tokenize {
                 return ret;
             }
         }
-        console.log(ret);
         return ret;
     }
 

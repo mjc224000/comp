@@ -19,7 +19,6 @@ class App extends React.Component {
     handleKeyUp = () => {
         let raw = this.con.innerText;
         let tokens = new Tokenize().tokenize(raw);
-        console.log(tokens);
         this.setState({tokens})
     }
     handleParser = () => {
